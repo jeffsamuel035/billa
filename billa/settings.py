@@ -31,6 +31,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'blog.apps.BlogConfig',
     'jobs.apps.JobsConfig',
     'django.contrib.admin',
     'django.contrib.auth',
@@ -76,12 +77,12 @@ WSGI_APPLICATION = 'billa.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'portfolio',
-        'USER': 'postgres',
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'portfoliodb',
+        'USER': 'root',
         'PASSWORD':'apple123',
         'HOST':'localhost',
-        'PORT':'5432',
+        'PORT':'3306',
     }
 }
 
